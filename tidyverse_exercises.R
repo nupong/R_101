@@ -7,7 +7,6 @@ library("ggplot2")
 ggplot(data=hotel_bookings) +
   geom_point(mapping = aes(x= stays_in_weekend_nights, y=children))
 
-
 library("palmerpenguins")
 
 ggplot(data=penguins) +
@@ -34,7 +33,6 @@ penguins %>%
 rename_with(penguins,tolower)
 
 clean_names(penguins)
-
 
 trimmed_df <- bookings_df %>% 
   select("hotel","is_canceled","lead_time") %>% 
